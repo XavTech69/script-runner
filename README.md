@@ -10,12 +10,12 @@ N.B. these keyboard shortcuts are currently being reviewed, [input is welcome](h
 
 | Command              | Mac OS X          | Linux            |
 |----------------------|-------------------|------------------|
-| Script Runner: Run   | <kbd>ctrl-x</kbd> | <kbd>alt-x</kbd> |
+| Script Runner: Run   | `ctrl-x`          | `alt-x`          |
 | Script Runner: Shell |                   |                  |
 
 Scripts which have been saved run in their directory, unsaved scripts run in the workspace root directory. Selecting a single line will only run that one line.
 
-A right-click context menu can be used to send signals to the running process, and as you may expect, you can interact directly with the terminal, typing input, pressing <kbd>ctrl-c</kbd>, and so on.
+A right-click context menu can be used to send signals to the running process, and as you may expect, you can interact directly with the terminal, typing input, pressing `ctrl-c`, and so on.
 
 Closing a terminal will cause its process to be killed.
 
@@ -44,7 +44,7 @@ Even for unsaved files without an associated grammar, as long as you have the co
 
 The default Atom process takes environment variables from the shell it was launched from. This might be an issue if launching Atom directly from the desktop environment when using, say, RVM which exports functionality for interactive terminal sessions.
 
-To ensure consistent behavior, when running a script, environment variables are extracted from the [interactive login shell](). This usually loads the same environment variables you'd expect when using the terminal.
+To ensure consistent behavior, when running a script, environment variables are extracted from the interactive login shell. This usually loads the same environment variables you'd expect when using the terminal.
 
 ## Configuration
 
@@ -55,9 +55,9 @@ values are: `'bottom'`, `'left'` and `'right'`. For example:
 
 ```cson
 "*":
-	//...
-	'script-runner':
-		'splitDirection': 'bottom'
+ //...
+ 'script-runner':
+  'splitDirection': 'bottom'
 ```
 
 ### Scrollback Distance
